@@ -7,6 +7,11 @@ import { useSelector } from "react-redux";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Workouts from "./pages/Workouts";
+import Excercises from "./pages/Excercises";
+import ChestExcercise from "./pages/ChestExcercise";
+import AbsExcercise from "./pages/AbsExcercise";
+import ShoulderExcercise from "./pages/ShoulderExcercise";
+import BackExcercise from "./pages/BackExcercise";
 
 const Container = styled.div`
   width: 100%;
@@ -15,8 +20,6 @@ const Container = styled.div`
   flex-direction: column;
   background: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.text_primary};
-  overflow-x: hidden;
-  overflow-y: hidden;
   transition: all 0.2s ease;
 `;
 
@@ -31,6 +34,11 @@ function App() {
             <Routes>
               <Route path="/" exact element={<Dashboard />} />
               <Route path="/workouts" exact element={<Workouts />} />
+              <Route path="/excercises" exact element={<Excercises />} />
+              <Route path= "/excercises/chest"  element={<ChestExcercise />} />
+              <Route path="/excercises/abs"  element={<AbsExcercise />} />
+              <Route path="/excercises/shoulder" element={<ShoulderExcercise />} />
+              <Route path="/excercises/back" element={<BackExcercise />} />
             </Routes>
           </Container>
         ) : (

@@ -138,23 +138,21 @@ const Navbar = ({ currentUser }) => {
         </Mobileicon>
         <NavLogo to="/">
           <Logo src={LogoImg} />
-          Fittrack
+          AvanthiFittrack
         </NavLogo>
 
         <MobileMenu isOpen={isOpen}>
           <Navlink to="/">Dashboard</Navlink>
           <Navlink to="/workouts">Workouts</Navlink>
-          <Navlink to="/tutorials">Tutorials</Navlink>
-          <Navlink to="/blogs">Blogs</Navlink>
-          <Navlink to="/contact">Contact</Navlink>
+          <Navlink to="/excercises">Excercises</Navlink>
+          {/* <Navlink to="/blogs">Blogs</Navlink> */}
         </MobileMenu>
 
         <NavItems>
           <Navlink to="/">Dashboard</Navlink>
           <Navlink to="/workouts">Workouts</Navlink>
-          <Navlink to="/tutorials">Tutorials</Navlink>
-          <Navlink to="/blogs">Blogs</Navlink>
-          <Navlink to="/contact">Contact</Navlink>
+          <Navlink to="/excercises">Excercises</Navlink>
+          {/* <Navlink to="/blogs">Blogs</Navlink> */}
         </NavItems>
 
         <UserContainer>
